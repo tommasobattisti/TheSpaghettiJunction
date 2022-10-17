@@ -1,0 +1,24 @@
+SELECT DISTINCT ?writer ?writerLabel 
+WHERE {
+    {
+      ?country wdt:P706 wd:Q145694 . #historicalCountry is anything located in the Italian peninsula
+    } UNION {
+      ?country wdt:P17 wd:Q38 .     #and anything of the sovereign state of Italy
+    }UNION{
+      Values ?country{wd:Q38 wd:Q172579 wd:Q223936 wd:Q48742118}
+    }
+  ?writer (wdt:P27 | p:P27 / ps:P27) ?country .                      #se fermo la query qui va in timeout
+  VALUES ?occupation {wd:Q36180 wd:Q6625963 wd:Q49757 wd:Q12144794}
+  ?writer wdt:P106 ?occupation .                                       #se specifico i vari ruoli da scrittore senza eccezioni i risultati sono 9788
+  
+  
+  { VALUES ?author {wdt:P50 wdt:P170}
+    ?something wdt:P50 ?writer . #Qua ho messo solo P perchè se inserisco entrambe le possiblità sopra crea errori
+   }UNION{
+    VALUES ?authorOf {wdt:P1455 wdt:P800}
+    ?writer ?authorOf ?something .
+  }                                                                    #se chiedo tutti gli scrittori con almeno un opera su wikidata trovo 1633 risultati
+  
+  ?writer wdt:P345 ?imdbId .                                            #aggiungendo questa riga arriva a 235 risulati                               
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
