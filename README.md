@@ -1,2 +1,2 @@
-# ILAOS
-ILAOS: Italian Literary Authors On Screen
+# ILOS
+ILOS: Italian Literature On Screen
