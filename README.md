@@ -1,6 +1,5 @@
-# ILOS
-ILOS: Italian Literature On Screen
-____
+# WWCR: Wikidata Works' Connections Report
+
 
 ## 1. Results of general queries without works' type restrictions
 The results shown in this section are contained in [this notebook](https://github.com/tommasobattisti/ilos/blob/main/sparqlQueries/finalQueriesGeneral.ipynb).
