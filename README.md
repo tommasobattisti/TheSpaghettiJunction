@@ -93,13 +93,13 @@ For what concerns the derivative works, it has been decided to focus on works ha
 >No restriction dealing with works' provenance have been applied.
 
 
-### 2.1 With the explicit definition of works only
+### 2.1 With the explicit definition of "work" only
 
 | DERIVATIVE WORKS |
 | --- |
 | 25819 |
 
-### 2.2 With the explicit definition of derivative works only
+### 2.2 With the explicit definition of "derivativeWork" only
 
 | DERIVATIVE WORKS |
 | --- |
