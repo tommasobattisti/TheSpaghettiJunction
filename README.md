@@ -2,25 +2,15 @@
 ILOS: Italian Literature On Screen
 ____
 
-# Results of general queries without works' type restrictions
+## 1. Results of general queries without works' type restrictions
+The results shown in this section are contained in [this notebook](https://github.com/tommasobattisti/ilos/blob/main/sparqlQueries/finalQueriesGeneral.ipynb).
 
 >**Note**<br>
->**
-- DA TRADURRE
-**
+>Under both the label "work" and “derivative work” any kind of work or format can be found. Moreover, the variable "creator" used in the queries does not include only people (intended as single individuals), but also bands or other group-based organisations.
 
-<aside>
-Nota:
+### 1.1 With no definition of "work" and "derivativeWork" in the queries
 
-1. Sotto “work” e “derivative work” può ricadere qualsiasi tipo di opera, oggetto, format ecc.
-
-2. “Creator” non considera solamente persone, ma vi possono ricadere anche formazioni da più di un componente.
-
-</aside>
-
-### 1. Nessuna definizione di work e derivative work
-
-La tabella presenta i risultati delle queries senza che sia stato definito cosa sia un’opera. La query estrae dati solamente sulla base delle proprietà utilizzate.
+The table presents the results of the queries in which works and derivative works are defined only in terms of the relation occurring between them (made explicit by means of the specified properties).
 
 | SUBJ | PROPERTY | OBJ | WORK/ PERSON COUNT | DERIVATIVE WORK COUNT |
 | --- | --- | --- | --- | --- |
@@ -35,9 +25,9 @@ La tabella presenta i risultati delle queries senza che sia stato definito cosa 
 | --- | --- |
 | ALL PROPERTIES UNION | 86683 |
 
-### 2. Con sola definizione di opera prima
+### 1.2 With explicit definition of "work" only
 
-La tabella presenta i risultati delle queries per le quali le sole opere di partenza sono state definite in quanto “qualcosa avente un autore o un creatore”.
+The table presents the results of the queries in which **only works** are defined in terms of "anything having an author or a creator" by means of `P170` (creator) and `P50` (author) properties.
 
 | SUBJ | PROPERTY | OBJ | WORK/ PERSON COUNT | DERIVATIVE WORK COUNT |
 | --- | --- | --- | --- | --- |
@@ -52,9 +42,9 @@ La tabella presenta i risultati delle queries per le quali le sole opere di part
 | --- | --- |
 | ALL PROPERTIES UNION | 44386 |
 
-### 3. Con sola definizione di opera derivata
+### 1.3 With explicit definition of "derivativeWork" only
 
-La tabella presenta i risultati delle queries per le quali le sole opere derivate sono state definite in quanto “qualcosa avente un autore o un creatore”.
+The table presents the results of the queries in which **only derivative works** are defined in terms of "anything having an author or a creator" by means of `P170` (creator) and `P50` (author) properties.
 
 | SUBJ | PROPERTY | OBJ | WORK/ PERSON COUNT | DERIVATIVE WORK COUNT |
 | --- | --- | --- | --- | --- |
@@ -69,9 +59,9 @@ La tabella presenta i risultati delle queries per le quali le sole opere derivat
 | --- | --- |
 | ALL PROPERTIES UNION | 2366 |
 
-### 4. Con definizione di opera prima e derivata
+### 1.4 With explicit definition of both "work" and "derivativeWork"
 
-La tabella presenta i risultati delle queries per le quali entrambe le opere di partenza e quelle derivate sono state definite in quanto “qualcosa avente un autore o un creatore”.
+The table presents the results of the queries in which **both works and derivative works** are defined in terms of "anything having an author or a creator" by means of `P170` (creator) and `P50` (author) properties.
 
 | SUBJ | PROPERTY | OBJ | WORK/ PERSON COUNT | DERIVATIVE WORK COUNT |
 | --- | --- | --- | --- | --- |
@@ -88,36 +78,34 @@ La tabella presenta i risultati delle queries per le quali entrambe le opere di 
 
 ---
 
-# Risultati queries generiche con restrizioni per tipologia di opera prima e derivata
+## 2. Results of general queries with restrictions for the classes of "work" and "derivativeWork"
+The results shown in this section are contained in [this notebook](https://github.com/tommasobattisti/ilos/blob/main/sparqlQueries/finalQueriesLiteratureandFilms.ipynb).
 
-Non sono comunque applicate restrizioni alla provenienza delle opere
+In order to define the literary works, the following classes have been used:
+- `Q47461344`: written work
+- `Q7725634`: literary work
+- `Q57`: book
+- `Q3331189`: edition
 
-Per definire le opere scritte vengono utilizzate le classi:
+For what concerns the derivative works, it has been decided to focus on works having a director. This allowed to retrieve entities ranging from films to theatre performances and plays, including also Tv series and other entities of similar classes. For this purpose, only the presence of the property `P57`(director) has been used to filter the derivative works.
 
-- Q47461344 → Opera scritta
-- Q7725634 → Opera letteraria
-- Q571 → Libro
-- Q3331189 → Edizione
+>**Note**<br>
+>No restriction dealing with works' provenance have been applied.
 
-Per definire le opere derivate viene invece utilizzata la proprietà:
 
-- P57 → Regista
-
-Da notare come sotto le opere che hanno un regista ricadano anche opere teatrali, programmi televisivi e simili.
-
-### 1. Con sola definizione opera prima come opera scritta
+### 2.1 With the explicit definition of works only
 
 | DERIVATIVE WORKS |
 | --- |
 | 25819 |
 
-### 2. Con sola definizione opera derivata come qualsiasi opera avente un regista
+### 2.2 With the explicit definition of derivative works only
 
 | DERIVATIVE WORKS |
 | --- |
 | 19654 |
 
-### 3. Con entrambe le definizioni
+### 2.3 With both definitions
 
 | DERIVATIVE WORKS |
 | --- |
