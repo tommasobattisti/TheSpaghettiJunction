@@ -1,4 +1,4 @@
-# WWCR: Wikidata Works' Connections Report
+# Wikidata Works' Connections Report
 
 
 ## 1. Results of general queries without works' type restrictions
