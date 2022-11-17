@@ -6,8 +6,9 @@
 ## Content
 - [Work connections without works' class restriction](#Work-connections-without-works'-class-restriction)
 - [Works connections with works' class restrictions](#Works-connections-with-works'-class-restrictions)
-- [The case of Italian literature](#The-case-of-Italian-literature)
+- [The case of Italian literature and international cinema and television](#The case of Italian literature and international cinema and television)
   - [Authors, works, and derivative works on Wikidata only](#Authors-works-and-derivative-works-on-Wikidata-only)
+  - [Authors and derivative works by mixing sources (Wikidata and IMDb)](#Authors-and-derivative-works-by-mixing-sources-(Wikidata-and-IMDb))
 
 ## Work connections without works' class restriction
 The results shown in this section are contained in [this notebook](https://github.com/tommasobattisti/ilos/blob/main/sparqlQueries/finalQueriesGeneral.ipynb).
@@ -119,10 +120,10 @@ For what concerns the derivative works, it has been decided to focus on works ha
 __________
 
 
-## The case of Italian literature
+## The case of Italian literature and international cinema and television
 The results shown in this section are contained in [this notebook](https://github.com/tommasobattisti/ilos/blob/main/sparqlQueries/finalQueriesItalianLiterature.ipynb). In particular, the queries used can be found in the `writers_works_and_derivatives` and `derivatives_type` notebook's section.
 
-By restricting the context to italian literature, it is possible to better grasp the magnitude of wikidata's lack of connection between artistic works.
+By restricting the context to the influence of italian literature in international cinema and television related productions, it is possible to better grasp the magnitude of wikidata's lack of connection between artistic works.
 In particular, the aim of this section is to compare what can be found using wikidata only, and what is possible to retrieve by extending the search by means of external sources (in this case, IMDb).
 
 ### Authors, works, and derivative works on Wikidata only
@@ -157,7 +158,27 @@ The following table highlights the number of authors of a literary work, where t
 | works | 1269 |
 | derivative works | 456 |
 
+However, it is worthy of attention that the derivative works can be of any kind. More precisely, the following table shows the count of derivative works by type:
 
+| Class label |	Count |
+|  ---  | --- |  
+| film	| 143 |
+| literary work	| 53  |
+| theatrical production |	49  |
+| dramatico-musical work	| 42  |
+| operatic production |	22  |
+| painting	| 18  |
+| miniseries  |	14  |
+| television film |	12  |
+| television series |	12  |
+| teleplay  |	12  |
+| musical work/composition	| 10 |
+| animated feature film | 8 |
+| version, edition, or translation  | 6 |
+| video game  | 5 |
+| Others |	84 |
 
+So, cinema and television related derivative works are 201, including films, miniseries, television films, television series, teleplay, and animated feature films. By supposing, for simplicity, that all the 84 other works are of our interest (you can check the notebok to see that actually only a few of them are significant for our topic of inquiry), we would have 285 derivative works of interest.
 
+### Authors and derivative works by mixing sources (Wikidata and IMDb)
 
