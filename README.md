@@ -181,7 +181,19 @@ However, it is worthy of attention that the derivative works can be of any kind.
 So, cinema and television related derivative works are 201, including films, miniseries, television films, television series, teleplay, and animated feature films. By supposing, for simplicity, that all the 84 other works are of our interest (you can check the notebok to see that actually only a few of them are significant for our topic of inquiry), we would have 285 derivative works of interest.
 
 ### Authors and derivative works by mixing sources (Wikidata and IMDb)
-As shown in [Battisti and Daquino, 2022](https://doi.org/10.6092/issn.2532-8816/14514), by combining the results of a SPARQL query aimed at retrieving italian authors having an identifier on IMDb, with information about the adio-visual product they are related to on IMDb, it has been prooved that the extracted italian authors have contributed to 2061 works on IMDb. By manually cheching the type of contribution we can say with certainty that at least 1388 are the works on IMDb derived from the work of an italian literary author.
+As shown in [Battisti and Daquino, 2022](https://doi.org/10.6092/issn.2532-8816/14514), by combining the results of a SPARQL query aimed at retrieving italian authors having an identifier on IMDb, with information about the adio-visual product they are related to on IMDb, it has been prooved that the extracted italian authors have contributed to 2061 works on IMDb.
+
+By manually cheching the type of contribution for every product on IMDb, we can say with certainty that at least **1388** are the works on IMDb derived from the work of an italian literary author.
 
 The SPARQL query and the Python code used to query Wikidata and IMDb API can be found on [figshare](https://figshare.com/articles/software/Python_code_for_IMDb_API/17008273/1).
 
+#### Some clarification
+First, the query to Wikidata used to retrieve initial informatio about the authors includes only italian authors with this chracteristics:
+- Having the citizenship related to Italy (`Q38`) or Kingdom of Italy (`Q172579`)
+- Being classified as novelist (`Q6625963`) or poet (`Q49757`)
+This specidfications are way more restrictive than the ones used for the queries in the [previous section](#Authors-works-and-derivative-works-on-Wikidata-only), and therefore are able to get only a portion of the authors that the previos query could have retrieved if it would have stopped at this point. 
+
+Furthermore, IMDb does not provide any explicit link to the work a film or a tv series is derived from. Moreover, from the initial information retrieved, the dataset used in the paper contains only information related to **cinematografic films**, **television films**, **tv series**, and **tv miniseries**.
+
+#### Conclusion
+The results of the inquiry made on Wikidata only include derivative works or different kind. By considering not only audiovisual derivative works, however, their number is still less than a half of the audiovisual derivative works retrieved by using mixed sources. In addition to that, this difference assumes even more relevance if it is considered that in the latter case, author's occupations possible values, as well as the age in which they could have lived, are way more restrictive.
