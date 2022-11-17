@@ -1,7 +1,10 @@
-# Wikidata Works' Connections Report
+# Work connections on Wikidata: a preliminary analysis and report
 
+## Content
+- [Work connections without work's type restriction](#Work-connections-without-work's-type-restriction)
+- [Works connections with class restrictions](#Works-connections-with-class-restrictions)
 
-## 1. Results of general queries without works' type restrictions
+## Work connections without work's type restriction
 The results shown in this section are contained in [this notebook](https://github.com/tommasobattisti/ilos/blob/main/sparqlQueries/finalQueriesGeneral.ipynb).
 
 >**Note**<br>
@@ -77,7 +80,7 @@ The table presents the results of the queries in which **both works and derivati
 
 ---
 
-## 2. Results of general queries with restrictions for the classes of "work" and "derivativeWork"
+## Works connections with class restrictions
 The results shown in this section are contained in [this notebook](https://github.com/tommasobattisti/ilos/blob/main/sparqlQueries/finalQueriesLiteratureandFilms.ipynb).
 
 In order to define the literary works, the following classes have been used:
@@ -109,3 +112,5 @@ For what concerns the derivative works, it has been decided to focus on works ha
 | DERIVATIVE WORKS |
 | --- |
 | 13612 |
+
+## Bruh
