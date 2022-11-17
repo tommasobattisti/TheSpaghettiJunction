@@ -9,6 +9,7 @@
 - [The case of Italian literature and international cinema and television](#The-case-of-Italian-literature-and-international-cinema-and-television)
   - [Authors, works, and derivative works on Wikidata only](#Authors-works-and-derivative-works-on-Wikidata-only)
   - [Authors and derivative works by mixing sources (Wikidata and IMDb)](#Authors-and-derivative-works-by-mixing-sources-(Wikidata-and-IMDb))
+  - [Final comparison and conclusion](#Conclusion)
 
 ## Work connections without works' class restriction
 The results shown in this section are contained in [this notebook](https://github.com/tommasobattisti/ilos/blob/main/sparqlQueries/finalQueriesGeneral.ipynb).
@@ -195,5 +196,5 @@ This specidfications are way more restrictive than the ones used for the queries
 
 Furthermore, IMDb does not provide any explicit link to the work a film or a tv series is derived from. Moreover, from the initial information retrieved, the dataset used in the paper contains only information related to **cinematografic films**, **television films**, **tv series**, and **tv miniseries**.
 
-#### Conclusion
+### Final comparison and conclusion
 The results of the inquiry made on Wikidata only include derivative works or different kind. By considering not only audiovisual derivative works, however, their number is still less than a half of the audiovisual derivative works retrieved by using mixed sources. In addition to that, this difference assumes even more relevance if it is considered that in the latter case, author's occupations possible values, as well as the age in which they could have lived, are way more restrictive.
