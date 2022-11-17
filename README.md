@@ -1,5 +1,8 @@
 # Work connections on Wikidata: a preliminary analysis and report
 
+>**Note**<br>
+>Data's last update: Nov, 17 2022
+
 ## Content
 - [Work connections without works' class restriction](#Work-connections-without-works'-class-restriction)
 - [Works connections with works' class restrictions](#Works-connections-with-works'-class-restrictions)
@@ -9,8 +12,7 @@
 ## Work connections without works' class restriction
 The results shown in this section are contained in [this notebook](https://github.com/tommasobattisti/ilos/blob/main/sparqlQueries/finalQueriesGeneral.ipynb).
 
->**Note**<br>
->Under both the label "work" and “derivative work” any kind of work or format can be found. Moreover, the variable "creator" used in the queries does not include only people (intended as single individuals), but also bands or other group-based organisations.
+In this section, under both the label "work" and “derivative work” any kind of work or format can be found. Moreover, the variable "creator" used in the queries does not include only people (intended as single individuals), but also bands or other group-based organisations.
 
 ### With no definition of "work" and "derivativeWork" in the queries
 
