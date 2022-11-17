@@ -151,9 +151,9 @@ The following table highlights the number of authors of a literary work, where t
 
 | ENTITY | COUNT |
 | --- | --- |
-| author | 122 |
-| work | 1269 |
-| derivative work | 456 |
+| authors | 122 |
+| works | 1269 |
+| derivative works | 456 |
 
 
 
