@@ -6,7 +6,7 @@
 ## Content
 - [Work connections without works' class restriction](#Work-connections-without-works'-class-restriction)
 - [Works connections with works' class restrictions](#Works-connections-with-works'-class-restrictions)
-- [The case of Italian literature and international cinema and television](#The case of Italian literature and international cinema and television)
+- [The case of Italian literature and international cinema and television](#The-case-of-Italian-literature-and-international-cinema-and-television)
   - [Authors, works, and derivative works on Wikidata only](#Authors-works-and-derivative-works-on-Wikidata-only)
   - [Authors and derivative works by mixing sources (Wikidata and IMDb)](#Authors-and-derivative-works-by-mixing-sources-(Wikidata-and-IMDb))
 
