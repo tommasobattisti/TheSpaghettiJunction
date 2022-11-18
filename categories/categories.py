@@ -80,7 +80,7 @@ def wdRequest(cat, extra='', results=None, checked={}):
         else:
             results += jresp['query']['categorymembers']
         if 'continue' in jresp:
-            sleep(.02)
+            #sleep(.02)
             wdRequest(
                 cat,
                 extra=f'&cmcontinue={jresp["continue"]["cmcontinue"]}',
@@ -93,7 +93,7 @@ def wdRequest(cat, extra='', results=None, checked={}):
             for result in results:
                 if result['title'] not in checked.keys():
                     if result['ns'] == 14:
-                        sleep(.02)
+                        #sleep(.02)
                         with open(f'{args.category.replace(" ", "_")}.json', 'w') as outfile:
                             json.dump(checked, outfile, ensure_ascii=False)
                         wdRequest(
@@ -129,9 +129,13 @@ try:
         if not args.json:
             checked = wdRequest(args.category)
         else:
-            with open(f'{args.category.replace(" ", "_")}.json') as infile:
-                print(yellow(f'   {args.category}'))
-                checked = json.load(infile)
+            try:
+                with open(f'{args.category.replace(" ", "_")}.json') as infile:
+                    print(yellow(f'   {args.category}'))
+                    checked = json.load(infile)
+            except FileNotFoundError:
+                print(red('   JSON file not found\n'))
+                sys.exit()
 
         pageSet = set([])
         for c in checked.keys():
@@ -153,7 +157,7 @@ try:
         
         totLink = 0
         reqCount = 1
-        reqMax = math.ceil(len(urls)/qmax)
+        reqMax = math.c(len(urls)/qmax)
         
         print()
         
@@ -180,7 +184,7 @@ try:
             except TypeError:
                 raise
                 print(red(query))
-            sleep(.02)
+            #sleep(.02)
             
             if qmax > len(urls):
                 break
