@@ -157,7 +157,7 @@ try:
         
         totLink = 0
         reqCount = 1
-        reqMax = math.c(len(urls)/qmax)
+        reqMax = math.ceil(len(urls)/qmax)
         
         print()
         
