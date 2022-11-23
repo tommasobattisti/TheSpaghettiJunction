@@ -138,29 +138,48 @@ try:
                 sys.exit()
 
         pageSet = set([])
+        notFilms = {}
+
         for c in checked.keys():
             for page in checked[c]['pages']:
-                pageSet.add(page)
+                if '(' in page and 'film' not in page:
+                    disambig = page.split('(')[1]
+                    disambig = re.sub(r"\d+", "", disambig) 
+                    disambig = disambig.replace('  ', ' ')
+                    disambig = disambig.strip(')').strip()
+                
+                    if disambig in notFilms:
+                        notFilms[disambig] += 1
+                    else:
+                        notFilms[disambig] = 1
+                else:
+                    pageSet.add(page)
         print()
         totCat = len(checked.keys())
         totWork = len(pageSet)
         print(f'   {totWork} work{"s" if totWork > 1 else ""} in {totCat} categor{"ies" if totCat > 1 else "y"}')
 
         urls = []
+        
         for t in sorted(list(pageSet)):
             title = t.replace(' ', '_')
             url = f'https://en.wikipedia.org/wiki/{title}'
             urls.append(f'<{url}>')
 
+        print()
+        
+        notFilms = dict(sorted(notFilms.items(), key=lambda item: item[1], reverse=True))
+        notFilmList = ', '.join([f'{notFilms[notFilm]} {notFilm}' for notFilm in notFilms.keys()])
+        
+        print(f'   Excluding: {notFilmList}\n')
+        
         qmin = 0
         qmax = 30
         
         totLink = 0
         reqCount = 1
         reqMax = math.ceil(len(urls)/qmax)
-        
-        print()
-        
+
         while True:
             urlChunk = [x.replace('"', "%22") for x in urls[qmin:qmax]]
         
