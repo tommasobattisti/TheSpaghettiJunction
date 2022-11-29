@@ -1,7 +1,7 @@
 # Work connections on Wikidata: a preliminary analysis and report
 
 >**Note**<br>
->Data's last update: Nov, 17 2022
+>Data's last update: Nov, 29 2022
 
 ## Introduction 
 This document is compiled with the purpose of presenting preliminary analysis regarding 'The Spaghetti Junction' project. In particular, a prior study is necessary in order to comprehend data and properties' inner connections within Wikidata. The aim is to investigate resources and determine how they can be used to fulfill research questions so that the project would be suitable for opening up the work to wider future perspectives.
