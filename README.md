@@ -3,6 +3,14 @@
 >**Note**<br>
 >Data's last update: Nov, 17 2022
 
+## Introduction to README document
+This document is compiled with the purpose of presenting preliminary analysis regarding 'The Spaghetti Junction' project. In particular, a prior study is necessary in order to comprehend data and properties' inner connections within Wikidata. The aim is to investigate resources and determine how they can be used to fulfill research questions so that the project would be suitable for opening up the work to wider future perspectives.
+In this regard, the two primary sections that compose the document are specifically listed below:
+  1. The first section considers the comparison between the results extracted from queries in Wikidata and the corresponding categories in Wikipedia. The purpose of this analysis is to estimate potential divergencies in terms of representation and amount of available data to process. 
+  2. The second section focuses on a specific case study: the preliminary research in this regard concern the possibility of quantifying links on Wikidata about literary works by Italian authors and the audiovisual works that derive from them.
+
+More specifically, a detailed table of contents is provided in the following section.
+
 ## Content
 - [Work connections without works' class restriction](#Work-connections-without-works'-class-restriction)
 - [Works connections with works' class restrictions](#Works-connections-with-works'-class-restrictions)
