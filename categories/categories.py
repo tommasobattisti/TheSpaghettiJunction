@@ -154,6 +154,7 @@ try:
                         notFilms[disambig] = 1
                 else:
                     pageSet.add(page)
+
         print()
         totCat = len(checked.keys())
         totWork = len(pageSet)
