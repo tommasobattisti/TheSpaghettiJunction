@@ -3,7 +3,7 @@
 >**Note**<br>
 >Data's last update: Nov, 17 2022
 
-## Introduction to README document
+## Introduction 
 This document is compiled with the purpose of presenting preliminary analysis regarding 'The Spaghetti Junction' project. In particular, a prior study is necessary in order to comprehend data and properties' inner connections within Wikidata. The aim is to investigate resources and determine how they can be used to fulfill research questions so that the project would be suitable for opening up the work to wider future perspectives.
 In this regard, the two primary sections that compose the document are specifically listed below:
   1. The first section considers the comparison between the results extracted from queries in Wikidata and the corresponding categories in Wikipedia. The purpose of this analysis is to estimate potential divergencies in terms of representation and amount of available data to process. 
