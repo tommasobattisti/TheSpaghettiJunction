@@ -23,7 +23,7 @@ In this project, we propose a holistic approach (based on the aforementioned lit
 
 ### 2.2 Budget
 
-*Approximate amount requested in USD: 39.200$ (1EUR → 1.04USD)*
+*Approximate amount requested in USD: 40.000$ (1EUR → 1.06USD)*
 
 **Budget Description:  UNIBO is the only beneficiary**
 
