@@ -47,9 +47,8 @@ We plan to publish up to 3 articles in open access journals and conference proce
 
 ### 2.5 Past contributions
 
-- M. Daquino, Assistant professor at UNIBO. Grant Wikicite: Wikipedia Citations in Wikidata, several articles leveraging Wikidata ([Scholar](https://www.notion.so/Spaghetti-Junction-6d39ec18611d4a1c86efd264e6d4007f): CLEF, ARTchives).
-- D. Metilli, research fellow at UCL. Grant WiGeDi (w/ B. Melis), former Wikipedia/Wikidata administrator and Wikipedian in Residence, research papers based on Wikidata ([Scholar](https://scholar.google.com/citations?user=SFvyNLIAAAAJ&hl=en&oi=ao))
-- T. Battisti and B. Melis, master students in DH. Bsc thesis on quantitative analysis of novelists and movies and Wikidata-based narratives.
+- M. Daquino, Assistant professor at UNIBO. Grant Wikicite: Wikipedia Citations in Wikidata, several articles leveraging Wikidata ([Scholar](https://scholar.google.it/citations?user=HomzePYAAAAJ&hl=it): CLEF, ARTchives).
+- D. Metilli, research fellow at UCL. Grant WiGeDi, former Wikipedia/Wikidata administrator and Wikipedian in Residence, research papers based on Wikidata ([Scholar](https://scholar.google.com/citations?user=SFvyNLIAAAAJ&hl=en&oi=ao))
 
 ## 3. Feedback
 
