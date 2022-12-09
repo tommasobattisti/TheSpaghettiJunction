@@ -19,7 +19,7 @@ DATAURL = 'https://query.wikidata.org/bigdata/namespace/wdq/sparql?query='
 
 parser = argparse.ArgumentParser(description='Search Wikipedia Categories')
 parser.add_argument('-c', '--category', dest='category', help='check category',
-    default='Films based on Italian novels')
+    default='Films based on novels')   #to retrieve films based on Italian novels in general just put "Films based on Italian novels" as category default
 parser.add_argument('-j', '--json', dest='json', help='load from JSON',
     action='store_true', default=False)
 args = parser.parse_args()
