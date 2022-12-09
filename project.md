@@ -50,8 +50,3 @@ We plan to publish up to 3 articles in open access journals and conference proce
 - M. Daquino, Assistant professor at UNIBO. Grant Wikicite: Wikipedia Citations in Wikidata, several articles leveraging Wikidata ([Scholar](https://scholar.google.it/citations?user=HomzePYAAAAJ&hl=it): CLEF, ARTchives).
 - D. Metilli, research fellow at UCL. Grant WiGeDi, former Wikipedia/Wikidata administrator and Wikipedian in Residence, research papers based on Wikidata ([Scholar](https://scholar.google.com/citations?user=SFvyNLIAAAAJ&hl=en&oi=ao))
 
-## 3. Feedback
-
-- Who we are in touch within the Wiki communities
-- advertisement of the proposal in the community (mailing lists, contact people in WikiProjects, social media platforms, blog posts, participation in community events)
-- endorsement?
