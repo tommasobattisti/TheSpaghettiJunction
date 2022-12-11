@@ -1,7 +1,9 @@
 # Work connections on Wikidata: a preliminary analysis and report
 
 >**Note**<br>
->Data's last update: Dec, 06 2022
+> Data's last update: Dec, 06 2022<br>Make sure to specify your user agent at the beginning of each notebook if you want to re-run the queries
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tommasobattisti/TheSpaghettiJunction.git/HEAD)
 
 ## Introduction and contents
 This document is compiled with the purpose of presenting some preliminary analyses for 'The Spaghetti Junction' project.
