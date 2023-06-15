@@ -8,7 +8,7 @@
 ## Introduction and contents
 This document is compiled with the purpose of presenting some preliminary analyses for 'The Spaghetti Junction' project.
 
-In particular, this study is a necessary step in order to better comprehend our subject of inquiry from the perspective of data and properties' inner connections within Wikidata. The aim is to draw a clear path that goeas from the particular to the more general context capable of highlighting connections-related lacks on Wikidata and potential contexts of enrichment.
+In particular, this study is a necessary step in order to better comprehend our subject of inquiry from the perspective of data and properties' inner connections within Wikidata. The aim is to draw a clear path going from the particular to the more general context capable of highlighting connections-related lacks on Wikidata and potential contexts of enrichment.
 
 An introductury analysis with a comparison of the connections between novels and films existing in both Wikipedia and Wikidata is followed by a "case study"-based evidence of the results achievable if Wikdata had more connections by using it combined with external sources. Finally, a broader inquiry shows what is the potential reach of the project by demonstrating how completely different entities (both creative and non creative works) are connected by means of the same properties, inducing us to think about the project's future perspectives and the possible benefits it would bring to Wikidata.
 
